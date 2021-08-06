@@ -14,7 +14,7 @@ const Graph = () => {
 		left: 30
 	};
 
-	const svg = useEffect(() => {
+	useEffect(() => {
 		d3.csv(CSVFile).then((data) => {
 			console.log(data[0]);
 		});
@@ -31,11 +31,8 @@ const Graph = () => {
 			.attr('height', height)
 			.style('background-color', 'red')
 			.append('g')
-			.attr(
-				'transform',
-				'translate(' + margin.left + ',' + margin.top + ')'
-			);
-	}, [1]);
+			.attr('transform', `translate( ${margin.left} , ${margin.top} )`);
+	}, []);
 
 	return (
 		<div id="graphContainer">
