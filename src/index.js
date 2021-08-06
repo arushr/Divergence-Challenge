@@ -5,11 +5,10 @@ import LandingPage from './components/LandingPage';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <LandingPage />
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<LandingPage />
+	</React.StrictMode>,
+	document.getElementById('root')
 );
-
 
 reportWebVitals();

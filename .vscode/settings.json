@@ -1,0 +1,6 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "xml.format.splitAttributesIndentSize": 4,
+    "prettier.requireConfig": true
+}
